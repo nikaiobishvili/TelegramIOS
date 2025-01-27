@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		865DBA0C2D47A4B200111A0A /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 865DBA0B2D47A4B200111A0A /* FirebaseAnalytics */; };
+		865DBA0E2D47A4B200111A0A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 865DBA0D2D47A4B200111A0A /* FirebaseAuth */; };
+		865DBA102D47A4B200111A0A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 865DBA0F2D47A4B200111A0A /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		86A6C3802D47762F0016406C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +35,30 @@
 		86A6C3892D47762F0016406C /* TelegramIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelegramIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		865DBA082D47A0E100111A0A /* Exceptions for "TelegramIOS" folder in "TelegramIOSTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"GoogleService-Info.plist",
+			);
+			target = 86A6C37E2D47762F0016406C /* TelegramIOSTests */;
+		};
+		865DBA092D47A0E100111A0A /* Exceptions for "TelegramIOS" folder in "TelegramIOSUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"GoogleService-Info.plist",
+			);
+			target = 86A6C3882D47762F0016406C /* TelegramIOSUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		86A6C3712D47762D0016406C /* TelegramIOS */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				865DBA082D47A0E100111A0A /* Exceptions for "TelegramIOS" folder in "TelegramIOSTests" target */,
+				865DBA092D47A0E100111A0A /* Exceptions for "TelegramIOS" folder in "TelegramIOSUITests" target */,
+			);
 			path = TelegramIOS;
 			sourceTree = "<group>";
 		};
@@ -52,6 +79,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				865DBA0C2D47A4B200111A0A /* FirebaseAnalytics in Frameworks */,
+				865DBA0E2D47A4B200111A0A /* FirebaseAuth in Frameworks */,
+				865DBA102D47A4B200111A0A /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +142,9 @@
 			);
 			name = TelegramIOS;
 			packageProductDependencies = (
+				865DBA0B2D47A4B200111A0A /* FirebaseAnalytics */,
+				865DBA0D2D47A4B200111A0A /* FirebaseAuth */,
+				865DBA0F2D47A4B200111A0A /* FirebaseFirestore */,
 			);
 			productName = TelegramIOS;
 			productReference = 86A6C36F2D47762D0016406C /* TelegramIOS.app */;
@@ -195,6 +228,9 @@
 			);
 			mainGroup = 86A6C3662D47762D0016406C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				865DBA0A2D47A4B200111A0A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 86A6C3702D47762D0016406C /* Products */;
 			projectDirPath = "";
@@ -558,6 +594,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		865DBA0A2D47A4B200111A0A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		865DBA0B2D47A4B200111A0A /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 865DBA0A2D47A4B200111A0A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		865DBA0D2D47A4B200111A0A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 865DBA0A2D47A4B200111A0A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		865DBA0F2D47A4B200111A0A /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 865DBA0A2D47A4B200111A0A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 86A6C3672D47762D0016406C /* Project object */;
 }
