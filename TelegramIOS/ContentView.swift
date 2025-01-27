@@ -1,9 +1,3 @@
-//
-//  ContentView.swift
-//  TelegramIOS
-//
-//  Created by Nika on 1/27/25.
-//
 
 import SwiftUI
 
